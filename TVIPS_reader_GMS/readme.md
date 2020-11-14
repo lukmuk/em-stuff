@@ -4,7 +4,7 @@ Uses the newly integrated miniconda python enviroment in GMS3 to read in TVIPS t
 It uses [tifffile](https://pypi.org/project/tifffile/) to read in the image and metadata (stored as taggroup 'TVIPS_metadata').  
 Stored metadata can be easily expanded/changed to your needs.  
 
-![tvipsreader](/images(tvipsreader.png)
+![tvipsreader](/images/tvipsreader.png)
 
 ## Installing tifffile (or other packages)
 After a clean installation of GMS3, the tifffile package is probably missing and has to be installed. (See also https://www.youtube.com/watch?v=-pQMytgaRVg)  
