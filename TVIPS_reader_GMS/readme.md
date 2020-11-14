@@ -3,6 +3,7 @@
 Uses the newly integrated miniconda python enviroment in GMS3 to read in TVIPS tiff files (Tietz Video and Image Processing Systems).  
 It uses [tifffile](https://pypi.org/project/tifffile/) to read in the image and metadata (stored as taggroup 'TVIPS_metadata').  
 Stored metadata can be easily expanded/changed to your needs.  
+The images are currently opened as single images, but the script should be easily adjustable to load them directly as a stack in GMS.
 
 ![tvipsreader](https://github.com/lukmuk/em-stuff/blob/main/TVIPS_reader_GMS/images/tvipsreader.PNG)
 
