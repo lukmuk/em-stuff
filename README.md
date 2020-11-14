@@ -1,2 +1,2 @@
 # em-stuff
-Repository for scripts/notes evolving around electron microscopy
+Repository for scripts/notes evolving around electron microscopy.
