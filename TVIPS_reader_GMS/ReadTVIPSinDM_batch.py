@@ -1,9 +1,7 @@
 # This is a python script meant to be run in GMS3.X with python support.
 # Missing python packages can be installed in the GMS miniconda enviroment.
-#
 # Reads in a stack of TVIPS .tifs, optionally saves them as dm3.
 # Some metadata is read and saved as tags in GMS -> can be changed/expanded to your desire.
-# Github: 
 
 import DigitalMicrograph as DM
 import tifffile as tiff
