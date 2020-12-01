@@ -11,7 +11,7 @@ After a clean installation of GMS3, the tifffile package is probably missing and
 You can find the path to the relevant miniconda enviroment in GMS under "File --> Global info... --> Scripting --> Python version". Open an Anaconda prompt terminal and activate the enviroment, e.g. something like "conda activate C:\ProgramData\Miniconda3\envs\GMS_VENV_PYTHON". Then run "pip install tifffile" to install the package.  
 
 ## Notes:
-For older versions you can use this DM script to load single images: https://stackoverflow.com/questions/58892185/how-to-import-tif-calibration-from-tvips-camera-into-dm  
+For older versions of GMS/DM without implemented Python enviroment you can use this DM script to load single images: https://stackoverflow.com/questions/58892185/how-to-import-tif-calibration-from-tvips-camera-into-dm  
 
 
 
