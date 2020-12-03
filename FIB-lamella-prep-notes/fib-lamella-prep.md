@@ -1,6 +1,8 @@
 # FIB TEM lamella preparation
 
-Some personal notes and experiences I had with sample preparation for transmission electron microscopy (TEM) using a focused ion beam (FIB)/scanning electron microscopy dual-beam system. Hopefully, some of the following notes are useful for anyone, even though modifications may be necessary for other material system/application/instrument. Especially the final thinning steps often require on-the-fly adjustments on sample tilt/beam parameters which can only be judged from personal experience with the instrument/sample. Therefore, different operators of FIB instruments use different settings and workflows which work for them.
+For an updated version visit Github: [lukmuk/em-stuff/FIB-lamella-prep-notes](https://github.com/lukmuk/em-stuff/tree/main/FIB-lamella-prep-notes)
+
+Some personal notes and experiences I had with sample preparation for transmission electron microscopy (TEM) using a focused ion beam (FIB)/scanning electron microscopy dual-beam system (mostly an FEI Strata 400S). Hopefully, some of the following notes are useful for someone, even though modifications may be necessary for other material system/application/instrument. Especially the final thinning steps often require on-the-fly adjustments on sample tilt/beam parameters which can only be judged from personal experience with the instrument/sample. Therefore, different operators of FIB instruments use different settings and workflows which work for them.
 
 ## Youtube videos
 
@@ -14,7 +16,7 @@ Todo: Add links
 
 Before going to the FIB, you can use Monte-Carlo simulation to get an idea at which sample thicknesses a contrast change appears in the SEM view during final thinning. When the sample get thin enough that electrons can penetrate the lamella, secondary electrons will also be emitted from the backside, which causes a contrast change in the SE image. The ETD image normally gets brigher, while the TLD signal gets darker when the sample gets electron transparent for a certain e-beam energy.
 
-The simulation can be done relatively quickly in Casino:
+The simulation can be done relatively quickly in Casino (version 2):
 
 1. Define your material in the `Sample Definition` menu as a bulk sample (the material density must be known roughly). For thin films on a substrate I normally use the substrate material to judge the lamella thickness during the final thinning steps.
 
@@ -23,6 +25,8 @@ The simulation can be done relatively quickly in Casino:
 3. The default values can be kept for the other parameters. Run `Begin Simulation`, wait for it to finish, then save the results as a .cas file and the trajectory image for each voltage.
 
 4. You can also use the projected `ZMax` distribution.
+
+Have the trajectory image and/or the ZMax distribution plot at hand during the FIB session.
 
 ## Sample preparation
 
@@ -35,7 +39,7 @@ The simulation can be done relatively quickly in Casino:
    * ...your region of interest (ROI) is near the surface or the surface itself (e.g. a thin film on a substrate) to protect the surface (ca. 20-100 nm C). This can protect the surface features during dose-intensive electron-beam induced deposition (EBID) of Pt. See also this [application note](https://www.leica-microsystems.com/science-lab/each-atom-counts-protect-your-samples-prior-to-fib-processing/) by Leica. The simulated penetration depth (ca. 60 nm) of 2 keV electrons in C (2 g/cm$^3$ ) is shown below.
 
 | <img title="" src="images/C-2keV-Casino.PNG" alt="" width="416" data-align="center"> | Monte-Carlo simulation of 2 keV electrons in C. |
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------- |
+|:------------------------------------------------------------------------------------:|:----------------------------------------------- |
 
 ## EBID
 
@@ -55,7 +59,7 @@ The simulation can be done relatively quickly in Casino:
   
   * **Automatic EBID**: Start pattern with EBID application file, adjust Z so that pattern deposits around 100-300 nm Pt (about 3-5 min).
   
-  * **Manual EBID**: Use reduced area window (F7 on FEI/ThermoFisher machines), make it same size as the rectangle pattern over your ROI and change dwell time to 1 µs. Open the GIS Pt gas flow and start scanning in the reduced window to grow the Pt layer. You can use beam shift to keep the ROI in the scanning window. See also this [video](https://www.youtube.com/watch?v=rvmF2wPJTbY) for a nice demonstration.
+  * **Manual EBID**: Use reduced area window (F7 on FEI/ThermoFisher machines), make it same size as the rectangle pattern over your ROI and change dwell time to 1 µs. Open the GIS Pt gas flow and start scanning in the reduced window to grow the Pt/C layer. You can use beam shift to keep the ROI in the scanning window. See also this [video](https://www.youtube.com/watch?v=rvmF2wPJTbY) for a nice demonstration.
 
 * After a few minutes of deposition, stop the gas flow, then stop the e-beam. Then retract the GIS needle.
 
