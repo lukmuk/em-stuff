@@ -34,7 +34,7 @@ The simulation can be done relatively quickly in Casino:
    
    * ...your region of interest (ROI) is near the surface or the surface itself (e.g. a thin film on a substrate) to protect the surface (ca. 20-100 nm C). This can protect the surface features during dose-intensive electron-beam induced deposition (EBID) of Pt. See also this [application note](https://www.leica-microsystems.com/science-lab/each-atom-counts-protect-your-samples-prior-to-fib-processing/) by Leica. The simulated penetration depth (ca. 60 nm) of 2 keV electrons in C (2 g/cm$^3$ ) is shown below.
 
-| <img title="" src="file:///C:/Users/gruenewald/Github/em-stuff/FIB-lamella-prep-notes/images/C-2keV-Casino.PNG" alt="" width="416" data-align="center"> | Monte-Carlo simulation of 2 keV electrons in C. |
+| <img title="" src="images/C-2keV-Casino.PNG" alt="" width="416" data-align="center"> | Monte-Carlo simulation of 2 keV electrons in C. |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------- |
 
 ## EBID
@@ -67,6 +67,6 @@ The simulation can be done relatively quickly in Casino:
 
 After C deposition, EBID, and IBID. The sample is protected during further FIB milling. In the final cross-section TEM sample you should see a stack similar to the one below (from the Leica application note above):
 
-<img title="" src="file:///C:/Users/gruenewald/Github/em-stuff/FIB-lamella-prep-notes/images/EBID-stack.PNG" alt="" data-align="center" width="300">
+<img title="" src="images/EBID-stack.PNG" alt="" data-align="center" width="300">
 
 Note that the 30 keV Ga ions penetrate roughly 30-40 nm into the EBID layer (transition region between EBID and IBID layer). This shows how much damage the i-beam can do to an unprotected sample surface if one deposits only an IBID layer directly on the bare surface (or a thin C layer).
