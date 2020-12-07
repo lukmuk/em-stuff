@@ -42,8 +42,8 @@ for f in files:
 			img.SetDimensionCalibration(0, 0, tag1.value['PixelSizeX'], 'nm', 0)
 			img.SetDimensionCalibration(1, 0, tag1.value['PixelSizeY'], 'nm', 0)
 		elif tag1.value['TemMode'] == 3: #Diffraction
-			img.SetDimensionCalibration(0, 0, tag1.value['PixelSizeX']/1000, '1/nm', 0)
-			img.SetDimensionCalibration(1, 0, tag1.value['PixelSizeY']/1000, '1/nm', 0)
+			img.SetDimensionCalibration(0, 0, tag1.value['PixelSizeX']/1000, 'mrad', 0)
+			img.SetDimensionCalibration(1, 0, tag1.value['PixelSizeY']/1000, 'mrad', 0)
 		
 		#Set image name and other metadata as tags
 		#img.SetName(tag1.value['ImageName']) #from TVIPS metadata
