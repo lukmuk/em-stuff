@@ -6,13 +6,13 @@ The images are currently opened as single images, but the script should be adjus
 
 ![tvipsreader](https://github.com/lukmuk/em-stuff/blob/main/TVIPS_reader_GMS/images/tvipsreader.PNG)
 
-## Installing tifffile (or other packages)
-After a clean installation of GMS3, the tifffile package is probably missing and has to be installed (see also this [Youtube video](https://www.youtube.com/watch?v=-pQMytgaRVg):
+### Installing tifffile (or other packages)
+After a clean installation of GMS3, the tifffile package is probably missing and has to be installed (see also this [Youtube video](https://www.youtube.com/watch?v=-pQMytgaRVg)):
   * You can find the path to the relevant miniconda enviroment in GMS under `File --> Global info... --> Scripting --> Python version`. 
   * Open an windows terminal/conda terminal and activate the GMS environment, e.g. something like `conda activate C:\ProgramData\Miniconda3\envs\GMS_VENV_PYTHON`
   * Run `pip install tifffile` to install the package.  
 
-## Notes:
+### Notes
 For older versions of GMS/DM without the implemented Python environment you can use this [DM script](https://stackoverflow.com/questions/58892185/how-to-import-tif-calibration-from-tvips-camera-into-dm) to load single TVIPS tiff images.
 
 
