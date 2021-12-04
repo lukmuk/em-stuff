@@ -8,7 +8,7 @@ The `.lut` files have to be copied to the `luts` folder of your ImageJ/Fiji inst
 
 ## Colorbrewer
 
-Colorbrewer [maps](https://colorbrewer2.org/?type=qualitative&scheme=Set1&n=9). Named `CB_<color>`.
+Colorbrewer [light](https://colorbrewer2.org/?type=qualitative&scheme=Set1&n=9#type=qualitative&scheme=Set3&n=12) (12) and [dark](https://colorbrewer2.org/?type=qualitative&scheme=Set1&n=9) (9) qualitative maps. Named `cb_<style>_<color>`.
 
 ## Matplotlib Tableau
 
@@ -21,4 +21,4 @@ import matplotlib.colors
 
 ## Paul Tol
 
-Named `pt_<style>_<color>`.Selected colormaps from [Paul Tol's](https://personal.sron.nl/~pault/) website, which are also used by [SciencePlots](https://github.com/garrettj403/SciencePlots).
+Named `pt_<style>_<color>`. Selected colormaps from [Paul Tol's](https://personal.sron.nl/~pault/) website, which are also used by [SciencePlots](https://github.com/garrettj403/SciencePlots).
