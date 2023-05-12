@@ -10,4 +10,6 @@ Helper for diffraction simulations with [ReciPro](https://github.com/seto77/Reci
 
 - Calculate scale for ReciPro (mm/pix, Camera length) for given experimental image (`Set Scale` area)
 
+## ESEM_RelativeHumidity
 
+Calculates the relative humidity in % in an SEM chamber based on (i) chamber pressure and (ii) sample temperature.
